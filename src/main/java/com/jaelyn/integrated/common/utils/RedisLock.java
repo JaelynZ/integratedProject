@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Redis分布式锁
  *
- * @author jingling.zhang@ucarinc.com
+ * @author zjaelyn@gmail.com
  * @date 2020-01-13 15:55
  */
 @Component

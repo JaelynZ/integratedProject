@@ -14,7 +14,7 @@ import java.util.UUID;
 /**
  * redis锁测试
  *
- * @author jingling.zhang@ucarinc.com
+ * @author zjaelyn@gmail.com
  * @date 2020-01-13 15:55
  */
 @RestController
