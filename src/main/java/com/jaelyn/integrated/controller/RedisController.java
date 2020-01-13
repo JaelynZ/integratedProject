@@ -3,6 +3,7 @@ package com.jaelyn.integrated.controller;
 import com.jaelyn.integrated.common.utils.RedisLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,14 +28,12 @@ public class RedisController {
 
     private static final String LOCK_KEY = "redisLock";
 
-    private final RedisLock redisLock;
+    @Autowired
+    private RedisLock redisLock;
 
-    private final StringRedisTemplate stringRedisTemplate;
+    @Autowired
+    private StringRedisTemplate stringRedisTemplate;
 
-    public RedisController(RedisLock redisLock, StringRedisTemplate stringRedisTemplate) {
-        this.redisLock = redisLock;
-        this.stringRedisTemplate = stringRedisTemplate;
-    }
 
     @GetMapping("/lock")
     public void lockTest() throws InterruptedException {
