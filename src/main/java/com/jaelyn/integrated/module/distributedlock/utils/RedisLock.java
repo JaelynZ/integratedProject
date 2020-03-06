@@ -1,4 +1,4 @@
-package com.jaelyn.integrated.common.utils;
+package com.jaelyn.integrated.module.distributedlock.utils;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
