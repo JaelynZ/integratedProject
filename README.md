@@ -1,2 +1,4 @@
 # integratedProject
-综合项目：包含redis分布式锁等等
+综合项目-包含多个模块：
+- 1.distributedlock 分布式锁
+- 2.redpacket 红包
