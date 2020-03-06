@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 红包分配算法
  *
- * @author jingling.zhang@ucarinc.com
+ * @author zjaelyn@gmail.com
  * @date 2020-03-06 10:13
  **/
 public class RedPacketAllocationUtil {

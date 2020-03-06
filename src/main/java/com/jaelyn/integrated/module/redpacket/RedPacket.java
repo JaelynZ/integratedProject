@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 红包
  *
- * @author jingling.zhang@ucarinc.com
+ * @author zjaelyn@gmail.com
  * @date 2020-03-06 15:17
  **/
 public class RedPacket {

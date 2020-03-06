@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * 抢红包测试
  *
- * @author jingling.zhang@ucarinc.com
+ * @author zjaelyn@gmail.com
  * @date 2020-03-06 15:27
  **/
 public class RedPacketTest {

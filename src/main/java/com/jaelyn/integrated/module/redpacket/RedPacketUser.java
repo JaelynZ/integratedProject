@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * 红包用户线程
  *
- * @author jingling.zhang@ucarinc.com
+ * @author zjaelyn@gmail.com
  * @date 2020-03-06 15:24
  **/
 public class RedPacketUser implements Runnable{
