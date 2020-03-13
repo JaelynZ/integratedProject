@@ -22,4 +22,49 @@ spring:
         max-idle: 8
         # 连接池中的最小空闲连接
         min-idle: 0
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/integratedProject?characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true&serverTimezone=UTC
+    username: root
+    password: root
+    druid:
+      initialSize: 5
+      minIdle: 5
+      maxWait: 60000
+      maxActive: 20
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+mybatis:
+  mapperLocations: classpath*:mapper/**/*.xml
+  type-aliases-package: com.jaelyn.integrated.module.**.model
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com:
+      jaelyn:
+        integrated: debug
+
+config:
+  arcface-sdk:
+    sdk-lib-path: D:\workspace\integratedProject\src\main\resources\lib
+    app-id: HWqs826wseLMLbkzcf7RZKNj1RDpgxgRmKD7yXuUFXNt
+    sdk-key: GMKLNna1f818ARsDmu8pBKUeRLb66LGtnc4Ya5Hyzoth
+    thread-pool-size: 5

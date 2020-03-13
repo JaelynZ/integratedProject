@@ -1,5 +1,6 @@
 package com.jaelyn.integrated;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2020-01-13 15:56
  */
 @SpringBootApplication
+@MapperScan("com.jaelyn.integrated.module.**.dao")
 public class IntegratedApplication {
 
     public static void main(String[] args) {
