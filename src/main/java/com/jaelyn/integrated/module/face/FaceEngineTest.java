@@ -26,7 +26,7 @@ public class FaceEngineTest {
         String sdkKey = "GMKLNna1f818ARsDmu8pBKUeRLb66LGtnc4Ya5Hyzoth";
 
 
-        FaceEngine faceEngine = new FaceEngine("D:\\workspace\\integratedProject\\src\\main\\resources\\lib");
+        FaceEngine faceEngine = new FaceEngine("C:\\Program Files\\java\\jdk1.8.0_45\\bin");
         //激活引擎
         int errorCode = faceEngine.activeOnline(appId, sdkKey);
 
