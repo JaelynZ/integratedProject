@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <spring.version>4.2.1.RELEASE</spring.version>
     </properties>
 
     <dependencies>
@@ -103,6 +104,20 @@
             <version>3.0.0.0</version>
             <scope>system</scope>
             <systemPath>${basedir}/src/main/resources/lib/arcsoft-sdk-face-3.0.0.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
         </dependency>
     </dependencies>
 
