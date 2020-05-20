@@ -3,7 +3,7 @@ package com.jaelyn.integrated.module.webcrawler.model;
 /**
  * TODO
  *
- * @author jingling.zhang@ucarinc.com
+ * @author jaelynz@gamil.com
  * @date 2020-05-20 15:40
  **/
 public class verifyCodeParam {
