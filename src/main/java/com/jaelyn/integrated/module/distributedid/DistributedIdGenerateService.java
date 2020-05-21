@@ -54,7 +54,7 @@ public class DistributedIdGenerateService {
         try {
             //关键点：创建持久顺序节点
             backPath = curatorFrameworkClient.create().withMode(CreateMode.PERSISTENT_SEQUENTIAL).forPath(fullPath, null);
-            //为防止生成的节点让费系统资源，故生成后异步删除此节点
+            //为防止生成的节点浪费系统资源，故生成后异步删除此节点
             String finalBackPath = backPath;
             ThreadPoolUtils.execute(() -> {
                 try {
