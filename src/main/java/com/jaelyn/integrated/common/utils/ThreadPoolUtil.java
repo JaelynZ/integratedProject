@@ -9,7 +9,7 @@ import java.util.concurrent.*;
  * @author jaelynz@gamil.com
  * @date 2019-10-25 18:17
  */
-public class ThreadPoolUtils {
+public class ThreadPoolUtil {
     /**
      * 使用volatile关键字保其可见性
      */
@@ -38,7 +38,7 @@ public class ThreadPoolUtils {
             if (threadPool != null) {
                 return threadPool;
             } else {
-                synchronized (ThreadPoolUtils.class) {
+                synchronized (ThreadPoolUtil.class) {
                     if (threadPool == null) {
                         /**
                          * 二次检查
