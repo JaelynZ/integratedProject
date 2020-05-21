@@ -99,10 +99,15 @@ logging:
       jaelyn:
         integrated: debug
 
+zk:
+  cluster: 127.0.0.1:2181
 
-config:
-  arcface-sdk:
-    sdk-lib-path: D:\workspace\integratedProject\src\main\resources\lib
-    app-id: HWqs826wseLMLbkzcf7RZKNj1RDpgxgRmKD7yXuUFXNt
-    sdk-key: GMKLNna1f818ARsDmu8pBKUeRLb66LGtnc4Ya5Hyzoth
-    thread-pool-size: 5
+# 异步线程配置
+async:
+  executor:
+    thread:
+      core-pool-size: 5
+      max-pool-size: 100
+      queue-capacity: 99999
+      keep-alive-seconds: 60
+      prefix-name: async-service-
