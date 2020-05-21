@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class DistributedIdController {
 
     @Autowired
-    private DistributedIdGenerateService idGenerateService;
+    private DistributedZkIdGenerateService zkIdGenerateService;
 
-    @GetMapping("/generateId")
-    public String generateId() {
-        return idGenerateService.generateId();
+    @GetMapping("/generateZkId")
+    public String generateZkId() {
+        return zkIdGenerateService.generateId();
     }
 }

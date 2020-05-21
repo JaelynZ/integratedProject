@@ -8,8 +8,6 @@ import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.data.Stat;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -20,7 +18,7 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 @Slf4j
-public class DistributedIdGenerateService {
+public class DistributedZkIdGenerateService {
     private static CuratorFramework curatorFrameworkClient;
     private static RetryPolicy retryPolicy;
     private static String ZK_CLUSTER = "127.0.0.1:2181";
