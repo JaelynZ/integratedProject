@@ -81,6 +81,15 @@ spring:
       #listner负责ack，每调用一次，就立即commit
       #ack-mode: manual_immediate
       missing-topics-fatal: false
+  dubbo:
+    application:
+      name: dubbo_server
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: com.jaelyn.integrated.module.rpc.dubbo
 
 server:
   port: 8080
