@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * api幂等token接口
  *
- * @author jingling.zhang@ucarinc.com
+ * @author jaelynz@gamil.com
  * @date 2020-06-15 10:52
  **/
 public interface ApiIdempotentTokenService {

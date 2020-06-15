@@ -3,7 +3,7 @@ package com.jaelyn.integrated.module.idempotent.enums;
 /**
  * 响应code
  *
- * @author jingling.zhang@ucarinc.com
+ * @author jaelynz@gamil.com
  * @date 2020-06-15 10:50
  **/
 public enum ResponseCode {

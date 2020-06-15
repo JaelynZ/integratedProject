@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * 幂等控制层
  *
- * @author jingling.zhang@ucarinc.com
+ * @author jaelynz@gamil.com
  * @date 2020-06-15 11:08
  **/
 @RestController

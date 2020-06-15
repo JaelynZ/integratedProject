@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 /**
  * api幂等拦截器
  *
- * @author jingling.zhang@ucarinc.com
+ * @author jaelynz@gamil.com
  * @date 2020-06-15 11:06
  **/
 @Component

@@ -16,7 +16,7 @@ import java.util.UUID;
 /**
  * api幂等token接口实现类
  *
- * @author jingling.zhang@ucarinc.com
+ * @author jaelynz@gamil.com
  * @date 2020-06-15 10:54
  **/
 @Service

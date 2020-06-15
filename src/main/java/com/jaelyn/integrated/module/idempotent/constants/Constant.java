@@ -3,7 +3,7 @@ package com.jaelyn.integrated.module.idempotent.constants;
 /**
  * 幂等常量
  *
- * @author jingling.zhang@ucarinc.com
+ * @author jaelynz@gamil.com
  * @date 2020-06-15 10:51
  **/
 public class Constant {

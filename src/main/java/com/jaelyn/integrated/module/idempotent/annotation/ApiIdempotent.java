@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 接口幂等注解
  *
- * @author jingling.zhang@ucarinc.com
+ * @author jaelynz@gamil.com
  * @date 2020-06-15 10:49
  **/
 @Target(ElementType.METHOD)
