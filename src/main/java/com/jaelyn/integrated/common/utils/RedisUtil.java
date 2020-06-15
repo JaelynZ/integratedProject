@@ -1,5 +1,6 @@
 package com.jaelyn.integrated.common.utils;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
@@ -17,6 +18,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2020-05-21 15:12
  **/
 @Component
+@Slf4j
 public class RedisUtil {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
@@ -81,6 +83,21 @@ public class RedisUtil {
             }
         }
     }
+
+    /**
+     * 删除key
+     * @param key
+     * @return
+     */
+    public Boolean del(String key) {
+        if (exists(key)) {
+            return redisTemplate.delete(key);
+        } else {
+            log.error("del key:{}", key+" 不存在");
+            return false;
+        }
+    }
+
     // ============================String=============================
 
     /**
@@ -566,4 +583,17 @@ public class RedisUtil {
             return 0;
         }
     }
+
+    /**
+     * 判断key是否存在
+     *
+     * @param key
+     * @return
+     */
+    public Boolean exists(String key) {
+        Boolean exists = redisTemplate.hasKey(key);
+        log.info("exists key:{} hasKey:{}", key, exists);
+        return exists;
+    }
+
 }
