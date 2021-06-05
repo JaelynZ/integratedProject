@@ -1,4 +1,4 @@
-package com.jaelyn.integrated.module.design;
+package com.jaelyn.integrated.module.design.template;
 
 /**
  * 模板方法模式
